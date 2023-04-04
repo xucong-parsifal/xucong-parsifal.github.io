@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xucong Wang</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            width: 100%;
+            height: 800px;
+            /*background-color:cadetblue;*/
+            /*padding-top: 200px;*/
+            /*background-image: url("./sr2bf0dbcc81c9c.png");*/
+            background-size: 100%;
+            /*opacity: 0.6;*/
+            /*background-repeat: repeat-x;*/
+            margin: auto;
+            position:relative;
+        }
+        ul{
+            list-style:none;
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            color:#efefef;
+        }
+        #nav{
+            width: 100%;
+            height: 80px;
+            background-color: white;
+            opacity: 0.8;
+            position: relative;
+            border-color: grey;
+            border-style: solid;
+        }
+        #nav > ul{
+            list-style: none;
+        }
+        #nav ul li{
+            float: right;
+            height: 80px;
+            width: 160px;
+        }
+        #nav ul li a{
+            margin-top: 30px;
+            display: block;
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            line-height: 20px;
+            text-decoration: none;
+        }
+        #nav ul li a:hover{
+            background-color:palegoldenrod;
+            color: #222;
+            font-weight:bolder;
+        }
+        #head{
+            width: 100%;
+            height: fit-content;
+            color: white;
+            font-family: "Times New Roman";
+            font-size: 50px;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-left: 5%;
+            background-image: url("./sr22c28894aa687.png");
+            background-size: 90%;
+            background-repeat: repeat-x;
+
+            /*background-position: center;*/
+        }
+        #name{
+            width: fit-content;
+            vertical-align: middle;
+            display: inline-block;
+
+        }
+        #other{
+            display: inline-block;
+            width: fit-content;
+            vertical-align: middle;
+        }
+        #address, #cnblog{
+            margin-left: 15%;
+            font-size: 20px;
+        }
+        #gicon, #cbi{
+            margin-left: 15%;
+            margin-bottom: 2%;
+            margin-top: 2%;
+            height: fit-content;
+            width: 5%;
+            display: inline-block;
+            vertical-align: middle;
+
+        }
+        #gname, #cbn{
+            height: fit-content;
+            display: inline-block;
+            vertical-align: middle;
+
+        }
+        #onepaper{
+            font-size: 28px;
+            margin-top: 3.5%;
+            margin-left: 10%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-left: 10%;
+            padding-right: 10%;
+            align-content: center;
+            border-style: solid ;
+            border-color: grey;
+            border-radius: 8px;
+        }
+        .author{
+            color: red;
+            font-size: 20px;
+        }
+        .pdf{
+            color: blue;
+            font-size: 20px;
+        }
+        .code{
+            color: green;
+            font-size: 20px;
+        }
+        .content_inside{
+            margin-top: 2%;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="head">
+    <div id="name">Xucong Wang</div>
+    <div id="other">
+        <div id="address">
+            <img id="gicon"src="./githubb.png" alt="icon">
+            <div id="gname"> Github: https://github.com/xucong-parsifal</div>
+        </div>
+        <div id="cnblog">
+            <img id="cbi"src="./CSDN.png" alt="icon">
+            <div id="cbn"> Cnblog: https://blog.csdn.net/CEUIFS</div>
+        </div>
+    </div>
+
+</div>
+<div id="container">
+    <div id="nav">
+        <ul>
+            <li><a href="./others.html">Others</a></li>
+            <li><a href="./social.html">Social Work</a></li>
+            <li><a href="./awards.html">Awards</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./research.html">Research</a></li>
+            <li><a href="./intro.html">Introduction</a></li>
+        </ul>
+    </div>
+    <div id="onepaper">
+        Rethinking Self-Knowledge Distillation with multi-source image fusion (CS.CV) <br>
+        <span class="author">Submitting to TNNLS(IF:14.233 Area 1), First Author</span><br>
+        <span class="content_inside">view: </span><a class="pdf" href="./Rethinking_Self_KD_with_Multi_source_information_fusion.pdf">pdf</a>
+        <a class="code" href="https://github.com/xucong-parsifal/Rethinking-Self-Knowledge-Distillation-with-Multi-source-Information-Fusion">code</a>
+        <div class="content_inside">
+            Abstract: <br>Existing SKD works mainly focus on multi-exit architecture, utility of history knowledge, interactions with label smoothing and small-scale regularization. Nevertheless, limited angles of source information restrain those SKD works from further amelioration.
+            In this paper we propose two innovative techniques for self-distillation from a wide view of multi-source information fusion, which are DRI (distillation with reverse instructions) and DSR (distillation with shape-wise regularization).
+        </div>
+        <div class="content_inside">
+            Contribution list: <br>Xucong raises the idea, does the experiments, records & analyses the results, make qualitative & quantitive explanation, draw all figures and write the paper.
+           <br>Pengchao (Postdoc of CUHK) is the tutor and communication author. She takes part in weekly meetings about this project, give her ideas, and ameliorate the paper.
+        </div>
+        <div class="content_inside">
+            Xucong's note: <br>
+            This work lasts from November 2022 to April 2023. Before starting this work, I read about 40 peer papers. Actually, this idea is just one of more than 200 attempts I made. Most attempts fade away just because
+            can not reach state-of-art. In this work, in order to verify my methods, I make about 100 experiments on different datasets and models. There also various ablation studies and fine-grained tests. Notably, I creatively employ a work from DL interpretability to make theoretical analysis.
+        </div>
+
+    </div>
+
+</div>
+<script>
+    var _nav = document.getElementById("nav");
+    var _onepaper = document.getElementById("container");
+    //滚动条事件
+    window.onscroll = function () {
+
+        //滚动条滚动的高度
+        _height = document.documentElement.scrollTop;
+        console.log(_height);
+
+        if(_height >= 200){
+
+            //修改导航栏的布局方式
+            // _nav.style.position = "fixed";
+            // _nav.style.top = 0;
+        }else{
+            _nav.style.position = "relative";
+        }
+    }
+</script>
+</body>
+</html>

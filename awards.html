@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xucong Wang</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #container{
+            width: 100%;
+            height: 800px;
+            /*background-color:cadetblue;*/
+            /*padding-top: 200px;*/
+            /*background-image: url("./sr2bf0dbcc81c9c.png");*/
+            background-size: 100%;
+            /*opacity: 0.6;*/
+            /*background-repeat: repeat-x;*/
+            margin: auto;
+            position:relative;
+        }
+        ul{
+            list-style:none;
+        }
+        a{
+            color: white;
+        }
+        a:hover{
+            color:#efefef;
+        }
+        #nav{
+            width: 100%;
+            height: 80px;
+            background-color: white;
+            opacity: 0.8;
+            position: relative;
+            border-color: grey;
+            border-style: solid;
+        }
+        #nav > ul{
+            list-style: none;
+        }
+        #nav ul li{
+            float: right;
+            height: 80px;
+            width: 160px;
+        }
+        #nav ul li a{
+            margin-top: 30px;
+            display: block;
+            color: black;
+            font-size: 20px;
+            text-align: center;
+            line-height: 20px;
+            text-decoration: none;
+        }
+        #nav ul li a:hover{
+            background-color:palegoldenrod;
+            color: #222;
+            font-weight:bolder;
+        }
+        #head{
+            width: 100%;
+            height: fit-content;
+            color: white;
+            font-family: "Times New Roman";
+            font-size: 50px;
+            padding-top: 3%;
+            padding-bottom: 3%;
+            padding-left: 5%;
+            background-image: url("./sr22c28894aa687.png");
+            background-size: 90%;
+            background-repeat: repeat-x;
+
+            /*background-position: center;*/
+        }
+        #name{
+            width: fit-content;
+            vertical-align: middle;
+            display: inline-block;
+
+        }
+        #other{
+            display: inline-block;
+            width: fit-content;
+            vertical-align: middle;
+        }
+        #address, #cnblog{
+            margin-left: 15%;
+            font-size: 20px;
+        }
+        #gicon, #cbi{
+            margin-left: 15%;
+            margin-bottom: 2%;
+            margin-top: 2%;
+            height: fit-content;
+            width: 5%;
+            display: inline-block;
+            vertical-align: middle;
+
+        }
+        #gname, #cbn{
+            height: fit-content;
+            display: inline-block;
+            vertical-align: middle;
+
+        }
+        #onepaper{
+            font-size: 22px;
+            margin-top: 3.5%;
+            margin-left: 10%;
+            padding-top: 2%;
+            padding-bottom: 2%;
+            padding-left: 10%;
+            padding-right: 10%;
+            align-content: center;
+            border-style: solid ;
+            border-color: grey;
+            border-radius: 8px;
+        }
+        .author{
+            color: red;
+            font-size: 24px;
+        }
+        .pdf{
+            color: blue;
+            font-size: 20px;
+        }
+        .code{
+            margin-top: 3%;
+        }
+        .content_inside{
+            margin-top: 2%;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="head">
+    <div id="name">Xucong Wang</div>
+    <div id="other">
+        <div id="address">
+            <img id="gicon"src="./githubb.png" alt="icon">
+            <div id="gname"> Github: https://github.com/xucong-parsifal</div>
+        </div>
+        <div id="cnblog">
+            <img id="cbi"src="./CSDN.png" alt="icon">
+            <div id="cbn"> Cnblog: https://blog.csdn.net/CEUIFS</div>
+        </div>
+    </div>
+
+</div>
+<div id="container">
+    <div id="nav">
+        <ul>
+            <li><a href="./others.html">Others</a></li>
+            <li><a href="./social.html">Social Work</a></li>
+            <li><a href="./awards.html">Awards</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./research.html">Research</a></li>
+            <li><a href="./intro.html">Introduction</a></li>
+        </ul>
+    </div>
+    <div id="onepaper">
+        <span class="code">1. Mathematics Contest of Modeling (MCM), national, first price [Meritorious], (2022)</span><br>
+        <span class="code">2. Computer designing contest of Chinese college students, national, third price (2022)</span><br>
+        <span class="code">3. The Chinese Mathematics Competition, province-level, first price. <span class="author">twice</span>, (2021 and 2023)</span><br>
+        <span class="code">4. Asia and Pacific Mathematical Contest in Modeling (APMCM), national first and third price (2021 and 2022)</span><br>
+        <span class="code">5. San-chuang contest of college students, province-level, third price.</span><br>
+        <span class="code">6. NEUQ outstanding student (2022)</span><br>
+        <span class="code">7. NEUQ First-level scholarship (2022)</span><br>
+        <span class="code">8. NEUQ scholarship of Innovation (2021)</span><br>
+
+
+
+    </div>
+
+</div>
+<script>
+    var _nav = document.getElementById("nav");
+    var _onepaper = document.getElementById("container");
+    //滚动条事件
+    window.onscroll = function () {
+
+        //滚动条滚动的高度
+        _height = document.documentElement.scrollTop;
+        console.log(_height);
+
+        if(_height >= 200){
+
+            //修改导航栏的布局方式
+            // _nav.style.position = "fixed";
+            // _nav.style.top = 0;
+        }else{
+            _nav.style.position = "relative";
+        }
+    }
+</script>
+</body>
+</html>

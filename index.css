@@ -1,0 +1,16 @@
+.main{
+    font-family: "Times New Roman",Times,Serif;
+    font-size: 15px;
+    background: cornflowerblue;
+    width: 100%;
+    height: 60px;
+    align-content: center;
+    alignment: center;
+    vertical-align: center;
+    /*padding-top: 1px;*/
+
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
